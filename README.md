@@ -1,4 +1,4 @@
-# Compile and debug ST32L053-Discovery Demo Project with "GNU MCU Eclipse" (aka. GnuArmEclipse")
+# Build and debug ST32L053-Discovery Demo Project with "GNU MCU Eclipse" (aka. "GnuArmEclipse")
 
 
 ## Tools and Sources used
@@ -7,21 +7,21 @@
 
 - Eclipse IDE for C/C++ Developers
  * I used this release: http://www.eclipse.org/downloads/packages/eclipse-ide-cc-developers/neon3
- * and installed it for Linux on /opt/
+ * (on Linux and install it below /opt/...)
  
 - "GNU MCU Eclipse" (aka. "GNU ARM Eclipse")
  * install it as decribed here: https://gnu-mcu-eclipse.github.io/plugins/install/
  * from: https://github.com/gnu-mcu-eclipse/eclipse-plugins/releases
- * and installed it for Linux on /opt/
+ * (on Linux and install it below /opt/...)
 
 - GCC ARM Embedded toolchain (gcc-arm-none-eabi aka "bare-metal") 
   * binary from: https://launchpad.net/gcc-arm-embedded
   * I used this: https://launchpad.net/gcc-arm-embedded/5.0/5-2016-q1-update/+download/gcc-arm-none-eabi-5_3-2016q1-20160330-linux.tar.bz2
-  * and installed it for Linux on /opt/
+  * (on Linux and install it below /opt/...)
  
 - OpenOCD with support for 'board/stm32l0discovery.cfg'
   * from: https://github.com/gnu-mcu-eclipse/openocd/releases
-  * and installed it for Linux on /opt/
+  * (on Linux and install it below /opt/...)
 
 - STM32CubeL0
   * download from: http://www2.st.com/content/st_com/en/products/embedded-software/mcus-embedded-software/stm32-embedded-software/stm32cube-embedded-software/stm32cubel0.html
@@ -60,6 +60,14 @@
 - by perorming the last point you should already have a Debug configuration under *Run > Run Configurations...*
 - execute it to start a GDB Debug session
 
+## Add general Project for stm32cubel0
+- to easily inspect any files under the stm32cubel0 firmware folder do...
+- *File > New > Project... > General Project  [Project Name: 'stm32cubel0']*
+
+## Create your own projects based on this
+- Copy the project in eclipse
+- add other stm32cubel0 source files you wish (by copying if you want to modify them otherwise by drag and drop and link)
+- add missing Includes under  project settings *C/C++ General > Paths and Symbols... [Includes]*
 
 ## How did I build this project and how could you the same for other STM32Cube Project
 
