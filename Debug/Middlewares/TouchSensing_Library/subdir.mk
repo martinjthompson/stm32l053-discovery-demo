@@ -4,17 +4,17 @@
 
 # Add inputs and outputs from these tool invocations to the build variables 
 C_SRCS += \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq_tsc.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_dxs.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_ecs.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_filter.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_globals.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_linrot.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_object.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_time.c \
-/home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_touchkey.c 
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq_tsc.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_dxs.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_ecs.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_filter.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_globals.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_linrot.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_object.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_time.c \
+/Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_touchkey.c 
 
 OBJS += \
 ./Middlewares/TouchSensing_Library/tsl.o \
@@ -44,77 +44,77 @@ C_DEPS += \
 
 
 # Each subdirectory must supply rules for building sources it contributes
-Middlewares/TouchSensing_Library/tsl.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl.c
+Middlewares/TouchSensing_Library/tsl.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_acq.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq.c
+Middlewares/TouchSensing_Library/tsl_acq.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_acq_tsc.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq_tsc.c
+Middlewares/TouchSensing_Library/tsl_acq_tsc.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_acq_tsc.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_dxs.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_dxs.c
+Middlewares/TouchSensing_Library/tsl_dxs.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_dxs.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_ecs.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_ecs.c
+Middlewares/TouchSensing_Library/tsl_ecs.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_ecs.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_filter.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_filter.c
+Middlewares/TouchSensing_Library/tsl_filter.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_filter.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_globals.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_globals.c
+Middlewares/TouchSensing_Library/tsl_globals.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_globals.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_linrot.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_linrot.c
+Middlewares/TouchSensing_Library/tsl_linrot.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_linrot.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_object.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_object.c
+Middlewares/TouchSensing_Library/tsl_object.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_object.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_time.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_time.c
+Middlewares/TouchSensing_Library/tsl_time.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_time.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
 	@echo 'Finished building: $<'
 	@echo ' '
 
-Middlewares/TouchSensing_Library/tsl_touchkey.o: /home/mm/Comp/uC/cortex_m0/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_touchkey.c
+Middlewares/TouchSensing_Library/tsl_touchkey.o: /Users/mjt/Hexissimo/BPMS/samples/stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/src/tsl_touchkey.c
 	@echo 'Building file: $<'
 	@echo 'Invoking: GNU ARM Cross C Compiler'
 	arm-none-eabi-gcc -mcpu=cortex-m0plus -mthumb -Os -fmessage-length=0 -fsigned-char -ffunction-sections -fdata-sections -ffreestanding -fno-move-loop-invariants -Wall -Wextra -Wno-unused-parameter  -g3 -DUSE_HAL_DRIVER -DSTM32L053xx -DUSE_STM32L0538_DISCO -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Core/Inc -I../../stm32cubel0/Projects/STM32L053C8-Discovery/Demonstrations/Config -I../../stm32cubel0/Drivers/CMSIS/Device/ST/STM32L0xx/Include -I../../stm32cubel0/Drivers/STM32L0xx_HAL_Driver/Inc -I../../stm32cubel0/Drivers/BSP/STM32L0538-Discovery -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Core/Inc -I../../stm32cubel0/Middlewares/ST/STM32_USB_Device_Library/Class/HID/Inc -I../../stm32cubel0/Middlewares/ST/STM32_TouchSensing_Library/inc -I../../stm32cubel0/Drivers/BSP/Components -I../../stm32cubel0/Drivers/BSP/Components/Common -I../../stm32cubel0/Drivers/CMSIS/Include -I"../include" -I"../Drivers/include" -I"../Drivers/include/cmsis" -I"../Drivers/include/stm32l0" -std=gnu11 -MMD -MP -MF"$(@:%.o=%.d)" -MT"$(@)" -c -o "$@" "$<"
